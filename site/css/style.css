@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+#topo {
+    height: auto;
+    background-color: #fff;
+    justify-content: center;
+}
+
+#logo {
+    width: 40%;
+    height: auto;
+}
+nav {
+    height: auto;
+    background-color: #00187a;
+    justify-content: center;
+}
+#menu {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#menu li {
+    position: relative;
+    padding: 20px 30px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #00187a;
+    list-style: none;
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu ol:hover ul {
+    display: block;
+}
+
+#menu li ul li {
+    display: block;
+    width: 140px;
+}
+
+/* ocultar o menu responsivo */
+label [for="bt_menu"], #bt_menu {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    nav{
+        justify-content: left;
+    }
+    menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+    display: block ;
+}
+}    
+
+
+#conteudo {
+    min-height: 700px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+section {
+    padding: 3% 10%;
+}
+
+#imgindex {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#rodape {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    height: 90px;
+}
+form{
+    width: 50%;
+    margin: 5% auto;
+    text-align: left;
+}
+input, label, textarea{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+input, textarea{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #00187a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+video {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+label [for="bt_menu"], #bt_menu {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    nav{
+        justify-content: left;
+    }
+    #menu{
+        display: none;
+    }
+    label[for="bt_menu"] {
+        display: block;
+        margin: 2%;
+    }
+    #bt_menu:checked ~ #menu{
+        display: block;
+        width: 100%;
+    }
+    menu li{
+        padding: 5% 1px;
+    }
+    menu li ul {
+        position: static;
+    }
+    menu li ul li {
+        position: relative;
+        display: block;
+    }
+    #logo{
+        width: 80%;
+        height: auto;
+    }
+    #imagindex{
+        width: 80%;
+        height: auto;
+    }
+    #imagconteudo{
+        width: 80%;
+        height: auto;       
+    }
+    video{
+        width: 80%;
+        height: auto;
+    }
+
+}
+

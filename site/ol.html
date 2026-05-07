@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- codificação de caracteres-->
+    <meta name="description" content="Conteúdos sobre HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web, Site">
+    <meta name="author" content="Caio Henrique">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Ordenada</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="flex-container" id="topo">
+        <img id="logo" src="imagem/logo_ub.png" alt="logo da universidade brasil azul com o fundo transparente">
+    </header>
+    <nav class="flex-container">
+        <label for="bt_menu"><img src="./imagem/menu.png" alt="icone de menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+        <ul id="menu">
+            <li><a href="index.html">Inícios</a> </li>
+            <li><a href="comentarios.html">Comentários</a> </li>
+            <li><a href="layout.html">Layout</a> </li>
+            <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista não Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="flex-container" id="conteudo">
+        <section>
+        <h1>
+            LISTA ORDENADA
+        </h1>
+        <p>
+            Uma lista ordenada começa com a tag &ltol&gt. Cada item da lista começa com a tag &ltli&gt.
+        </p>
+        <p>
+            Os itens da lista serão marcados com números por padrão:
+        </p>
+        <img id="imgconteudo" src="imagem/lista_ordenada.jpg" alt="Imagem mostrando a sintaxe de lista ordenada em HTML">
+        </section>
+    </main>
+    <footer class="flex-container" id="rodape">
+        <p>
+            Todos os direitos reservados &copy; 2026
+        </p>
+    </footer>
+    
+</body>
+</html>

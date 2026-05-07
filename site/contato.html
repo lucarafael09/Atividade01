@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- codificação de caracteres-->
+    <meta name="description" content="Conteúdos sobre HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web, Site">
+    <meta name="author" content="Fellipe dos Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrução de Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="flex-container" id="topo">
+        <img id="logo" src="imagem/logo_ub.png" alt="logo da universidade brasil azul com o fundo transparente">
+    </header>
+    <nav class="flex-container">
+        <label for="bt_menu"><img src="./imagem/menu.png" alt="icone de menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+        <ul id="menu">
+            <li><a href="index.html">Inícios</a> </li>
+            <li><a href="comentarios.html">Comentários</a> </li>
+            <li><a href="layout.html">Layout</a> </li>
+            <li><a href="#">Listas</a>
+                <ul>
+                    <li><a href="ol.html">Lista Ordenada</a></li>
+                    <li><a href="ul.html">Lista não Ordenada</a></li>
+                </ul>
+            </li>
+            <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="flex-container" id="conteudo">
+        <section>
+             <h1>CONTATO</h1>
+             <form action="" method="post">
+                <fieldset>
+                    <legend>Dados pesoais</legend>
+                    <label for="nome" class="required">Nome:</label>
+                    <input type="text" name="name" id="nome" placeholder="Digite seu nome completo" required>
+
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+
+                    <label for="data" class="required" >Data de nascimento</label>
+                    <input type="date" name="data" id="data" required>
+
+                    <label for="email" class="required">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu
+                    telefone">
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="cep" class="required">CEP:</label>
+                    <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" required>
+
+                    <label for="rua" >Rua</label>
+                    <input type="text" name="rua" id="rua" disabled>
+
+                    <label for="numero"class="required">Número:</label>
+                    <input type="number" name="numero" id="numero" required>
+
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" id="complemento">
+
+                    <label for="bairro" >Bairro:</label> 
+                    <input type="text" name="bairro" id="bairro" disabled>
+
+                    <label for="cidade" >Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" disabled>
+
+                    <label for="estado" >Estado:</label>
+                    <input type="text" name="estado" id="estado" disabled>   
+                    
+
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <label for="assunto" class="required">Assunto:</label>
+                    <input type="text" name="assunto" id="assunto" placeholder="Digite o assunto da mensagem" required>
+
+                    <label for="mensagem" class="required">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+                </fieldset>
+                <button type="submit">Enviar</button>
+                
+
+            
+        </section>
+    </main>
+    <footer class="flex-container" id="rodape">
+        <p>
+            Todos os direitos reservados &copy; 2026
+        </p>
+    </footer>
+    
+</body>
+</html>
