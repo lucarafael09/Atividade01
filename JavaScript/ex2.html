@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="ex2.js"></script>
+    <style>
+        #oculta{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <form name="contato" id="contato">
+    <form name="contato" id="contato" onsubmit="return validar()">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome"> <br>
 
@@ -14,13 +20,18 @@
         <input type="email" name="email" id="email"> <br>
         
         <label for="assunto">Assunto:</label>
-        <select name="assunto" id="assunto">
+        <select name="assunto" id="assunto" onchange="verificarOpcao()">
+            <option value="">Selecione uma opção</option>
             <option value="duvida">Dúvida</option>
             <option value="sugestao">Sugestão</option>
             <option value="reclamacao">Reclamação</option>
             <option value="outro">Outro</option>
         </select> <br>
-        <label for="mensagem">Mensagem:</label>
+        <div id="oculta">
+            <label for="qual">Qual?</label>
+            <input type="text" name="qual" id="qual">
+        </div>
+        <label for="mensagem">Mensagem:</label> <br>
         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
         <button type="submit">Enviar</button>
     </form>
